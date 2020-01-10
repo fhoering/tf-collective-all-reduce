@@ -8,16 +8,12 @@ mkdir libs
 
 pushd libs
 
-  curl -L "https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz" -o boost_1_70_0.tar.gz
-  tar -xzf  boost_1_70_0.tar.gz
-  rm boost_1_70_0.tar.gz
-
-  git clone git@github.com:dmlc/dmlc-core.git
+  git clone https://github.com/dmlc/dmlc-core
   pushd dmlc-core
     make
   popd
 
-  git clone git@github.com:criteo-forks/rabit.git
+  git clone https://github.com/criteo-forks/rabit
   pushd rabit
     make
   popd
